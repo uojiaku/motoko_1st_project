@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "canisters": {
+    "mbido_backend": {
+      "type": "motoko",
+      "main": "src/mbido_backend/main.mo"
+    },
+    "mbido_frontend": {
+      "type": "assets",
+      "source": [
+        "src/mbido_frontend/assets"
+      ],
+      "dependencies": [
+        "mbido_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}
